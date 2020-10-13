@@ -1,0 +1,60 @@
+<!doctype html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+    .instruction{
+        width: 50%;
+    margin: auto;
+    }
+    .item{
+    border: 1px solid grey;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    background: gray;
+    color: white;
+    margin: 15px;
+    }
+    .title, .instruction {
+        text-align: center;
+    }
+    img {
+        width: 100%;
+    }
+    .hint{
+        display:none;
+    }
+</style>
+<div class="row">
+    <div class="title">
+<h3>Дорогой Стас!!!</h3>
+<p>Сегодня необычный день, день когда исполняются желания.</p>
+<p>Исполняются они не просто так, тебе придеться потрудиться, но мы приготовили тебе в помощь подсказки</p>
+<p>Если тебе будет сложно, мы всегда рядом</p>
+<p>Веселой дороги!!</p>
+</div>
+<div class="instruction">
+<p>Инструкция:</p>
+<div class="item">Подсказка номер 1</div>
+<div class="hint"><img src='images/1.JPG'></div>
+<div class="item">Подсказка номер 2</div>
+<div class="hint"><img src='images/5.JPG'></div>
+<div class="item">Подсказка номер 3</div>
+<div class="hint"><img src='images/2.JPG'></div>
+<div class="item">Подсказка номер 4</div>
+<div class="hint"><img src='images/3.JPG'></div>
+<div class="item">Подсказка номер 5</div>
+<div class="hint"><img src='images/4.JPG'></div>
+<div class="item">Подсказка номер 6</div>
+<div class="hint"><img src='images/6.JPG'></div>
+<div class="item">Подсказка номер 7</div>
+<div class="hint"><img src='images/7.jpg'></div>
+<div class="item">Подсказка номер 8</div>
+<div class="hint"><img src='images/8.jpg'></div>
+</div>
+</div>
+<script>
+$('.item').click(function () {     
+    $(this).next('.hint').toggle();
+});
+</script>
+</html>
